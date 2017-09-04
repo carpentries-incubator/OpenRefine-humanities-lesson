@@ -36,7 +36,7 @@ If you haven't already, download the data from:
 Once OpenRefine is launched in your browser, the left margin has options to `Create Project`, `Open Project`, or `Import Project`. Here we will create a new project:
 
 1. click `Create Project` and select `Get data from` `This Computer`.  
-2. Click `Choose Files` and select the file `Portal_rodents_19772002_scinameUUIDs.csv`. Click `Open` or double-click on the filename.
+2. Click `Choose Files` and select the file `TCP.csv`. Click `Open` or double-click on the filename.
 3. Click `Next>>` under the browse button to upload the data into OpenRefine.  
 4. OpenRefine gives you a preview - a chance to show you it understood the file. If, for example, your file was really tab-delimited, the preview might look strange, you would choose the correct separator in the box shown and click `Update Preview` (bottom left). If this is the wrong file, click `<<Start Over` (upper left).  
 5. If all looks well, click `Create Project>>` (upper right). 
@@ -56,11 +56,11 @@ Typically, you create a facet on a particular column. The facet summarizes the c
 
 [More on faceting](https://github.com/OpenRefine/OpenRefine/wiki/Faceting)
 
-Here we will use faceting to look for potential errors in data entry in the `scientificName` column.
+Here we will use faceting to look for potential errors in data entry in the `Author` column.
 
-1. Scroll over to the `scientificName` column.
+1. Scroll over to the `Author` column.
 2. Click the down arrow and choose `Facet` > `Text facet`.
-3. In the left panel, you'll now see a box containing every unique value in the `scientificName` column 
+3. In the left panel, you'll now see a box containing every unique value in the `Author` column 
 along with a number representing how many times that value occurs in the column.
 4. Try sorting this facet by name and by count. Do you notice any problems with the data? What are they?
 5. Hover the mouse over one of the names in the `Facet` list. You should see that you have an `edit` function available. 
@@ -68,14 +68,13 @@ along with a number representing how many times that value occurs in the column.
 
 > ## Solution
 > 
-> There will be several near-identical entries in `scientificName`. For example, there is one entry for `Ammospermophilis harrisi` and
-> one entry for `Ammospermophilus harrisii`. These are both misspellings of `Ammospermophilus harrisi`. We will see how to correct these 
+> There will be several near-identical entries in `Author`. For example, there is one entry for `Archdeacony of London`. This a misspellings of `Archdeaconry`. We will see how to correct these 
 > misspelled and mistyped entries in a later exercise.  
 {: .solution}
 
 > ## Exercise
 >
-> 1. Using faceting, find out how many years are represented in the census.  
+> 1. Using faceting, find out how many years are represented in the catalogue.  
 >
 > 2. Is the column formatted as Number, Date, or Text? How does changing the format change the faceting display?
 >
@@ -83,13 +82,13 @@ along with a number representing how many times that value occurs in the column.
 > 
 > > ## Solution
 > > 
-> > 1. For the column `yr` do `Facet` > `Text facet`. A box will appear in the left panel showing that there are 26 unique entries in
+> > 1. For the column `Date` do `Facet` > `Text facet`. A box will appear in the left panel showing that there are 64 unique entries in
 > > this column.  
 > > 2. By default, the column `yr` is formatted as Text. You can change the format by doing `Edit cells` > `Common transforms` > 
 > > `To number`. Doing `Facet` > `Numeric facet` creates a box in the left panel that shows a histogram of the number of 
 > > entries per year. Notice that the data is shown as a number, not a date. If you instead transform the column to a date, the 
 > > program will assume all entries are on January 1st of the year.   
-> > 3. After creating a facet, click `Sort by count` in the facet box. The year with the most observations is 1997. The least is 1977. 
+> > 3. After creating a facet, click `Sort by count` in the facet box. The year with the most observations is 1534 and 1640. There are many data but among them are 1632, 1636. 
 > > 
 > {: .solution}
 {: .challenge}
@@ -98,7 +97,7 @@ along with a number representing how many times that value occurs in the column.
 
 In OpenRefine, clustering means "finding groups of different values that might be alternative representations of the same thing". For example, the two strings `New York` and `new york` are very likely to refer to the same concept and just have capitalization differences. Likewise, `Gödel` and `Godel` probably refer to the same person. Clustering is a very powerful tool for cleaning datasets which contain misspelled or mistyped entries. OpenRefine has several clustering algorithms built in. Experiment with them, and learn more about these algorithms and how they work. 
 
-1. In the `scientificName` Text Facet we created in the step above, click the `Cluster` button.
+1. In the `Author` Text Facet we created in the step above, click the `Cluster` button.
 2. In the resulting pop-up window, you can change the `Method` and the `Keying Function`. Try different combinations to 
  see what different mergers of values are suggested.
 3. Select the `key collision` method and `metaphone3` keying function. It should identify three clusters. 
@@ -118,17 +117,17 @@ your solutions for later exercises will not be the same as shown in those exerci
 If data in a column needs to be split into multiple columns, and the parts are separated by a common separator (say a comma, or a space), you can use that separator to divide up the pieces into their own columns.
 
 
-1. Let us suppose we want to split the `scientificName` column into separate colums for genus and for species. 
-2. Click the down arrow at the top of the `scientificName` column. Choose `Edit Column` > `Split into several columns...`
+1. Let us suppose we want to split the `Author` column into separate columns for Authors 
+2. Click the down arrow at the top of the `Author` column. Choose `Edit Column` > `Split into several columns...`
 3. In the pop-up, in the `Separator` box, replace the comma with a space.
 4. Uncheck the box that says `Remove this column`.
-5. Click `OK`. You'll get some new columns called `scientificName 1`, `scientificName 2`, and so on.
-6. Notice that in some cases `scientificName 1` and `scientificName 2` are empty. Why is this? What do you think we 
+5. Click `OK`. You'll get some new columns called `Author 1`, `Author 2`, and so on.
+6. Notice that in some cases `Author 1` and `Author 2` are empty. Why is this? What do you think we 
 can do to fix this?
 
 > ## Solution
 > 
-> The entries that have data in `scientificName 3` and `scientificName 4` but not the first two `scientificName` columns 
+> The entries that have data in `Author 3` and `Author 4` but not the first two `Author` columns 
 > had an extra space at the beginning of the entry. Leading white spaces are very difficult to notice when cleaning data
 > manually. This is another advantage of using OpenRefine to clean your data. We'll look at how to 
 > fix leading and trailing white spaces in a later exercise.
@@ -140,10 +139,10 @@ can do to fix this?
 > 
 > > ## Solution
 > > 
-> > On the `scientificName 2` column, click the down arrow and then `Edit column` > `Rename this column`. Type "species" into the box
-> > that appears. A pop-up will appear that says `Another column already named species`. This is because there is another column
-> > where we've recorded the species abbreviation. You can choose another name like `speciesName` for this column or change the other 
-> > `species` column you can change the name to `speciesAbbreviation`.
+> > On the `Author 2` column, click the down arrow and then `Edit column` > `Rename this column`. Type "species" into the box
+> > that appears. A pop-up will appear that says `Another column already named Author`. This is because there is another column
+> > where we've recorded the species abbreviation. You can choose another name like `authorName` for this column or change the other 
+> > `Author` column you can change the name to `allAuthors`.
 > {: .solution}
 {: .challenge}
 
@@ -155,7 +154,7 @@ It's common while exploring and cleaning a dataset to discover after you've made
 1. Click where it says `Undo / Redo` on the left side of the screen. All the changes you have made so far are listed here.
 2. Click on the step that you want to go back to, in this case the previous step. The added columns will disappear.
 3. Notice that you can still click on the last step and make the columns reappear, and toggle back and forth between these states.
-4. Leave the dataset in the state in which the `scientificNames` were clustered, but not yet split.
+4. Leave the dataset in the state in which the `Author` was clustered, but not yet split.
 
 Important: If you skip this step, your solutions for later exercises will not be the same as shown in those exercise solutions.
 
@@ -164,9 +163,9 @@ Important: If you skip this step, your solutions for later exercises will not be
 Words with spaces at the beginning or end are particularly hard for we humans to tell from strings without, but the blank characters will make a difference to the computer. We usually want to remove these. OpenRefine provides a tool to remove blank characters from the beginning and end of any entries that have them.
 
 
-1. In the header for the column `scientificName`, choose `Edit cells` > `Common transforms` > `Trim leading and trailing whitespace`.
-2. Notice that the `Split` step has now disappeared from the `Undo / Redo` pane on the left and is replaced with a `Text transform on 3 cells`
-3. Perform the same `Split` operation on `scientificName` that you undid earlier. This time you should only get two new columns. Why?
+1. In the header for the column `Author`, choose `Edit cells` > `Common transforms` > `Trim leading and trailing whitespace`.
+2. Notice that the `Split` step has now disappeared from the `Undo / Redo` pane on the left and is replaced with a `Text transform on 0 cells`
+3. Perform the same `Split` operation on `Author` that you undid earlier. This time you should only get two new columns. Why?
 
 > ## Solution
 > 
