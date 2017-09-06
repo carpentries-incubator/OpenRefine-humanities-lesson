@@ -21,11 +21,11 @@ When a table is imported into OpenRefine, all columns are treated as having text
 
 Be sure to remove any `Text filter` facets you have enabled from the left panel so that we can examine our whole dataset. You can remove an existing facet by clicking the `x` in the upper left of that facet window.
 
-To transform cells in the `recordID` column to numbers, click the down arrow for that column, then `Edit cells` > `Common transforms…` > `To number`. You will notice the `recordID` values change from left-justified to right-justified, and black to green color.
+To transform cells in the `VID` column to numbers, click the down arrow for that column, then `Edit cells` > `Common transforms…` > `To number`. You will notice the `VID` values change from left-justified to right-justified, and black to green color.
 
 > ## Exercise
 >
-> Transform three more columns, including `period`, from text to numbers. Can all columns be transformed to numbers?
+> Transform three more columns, including `Date`, from text to numbers. Can all columns be transformed to numbers?
 > 
 > > ## Solution
 > > 
@@ -52,12 +52,12 @@ When done examining the numeric data, remove this facet by clicking the `x` in t
 
 ## Scatterplot facet
 
-Now that we have multiple columns representing numbers, we can see how they relate to one another using the scatterplot facet. Select a numeric column, for example `recordID`, and use the pulldown menu to > `Facet` > `Scatterplot facet`. A new window called `Scatterplot Matrix` will appear. There are squares for each pair of numeric columns organized in an upper right triangle. Each square has little dots for the cell values from each row.
+Now that we have multiple columns representing numbers, we can see how they relate to one another using the scatterplot facet. Select a numeric column, for example `Date`, and use the pulldown menu to > `Facet` > `Scatterplot facet`. A new window called `Scatterplot Matrix` will appear. There are squares for each pair of numeric columns organized in an upper right triangle. Each square has little dots for the cell values from each row.
 
 > ## Exercise
 >
 > 1. Examine the scatterplots overall. Do the patterns make sense?
-> 2. Why does the scatterplot for `recordID` vs `period` have the pattern it does?
+> 2. Why does the scatterplot for `VID` vs `Date` have the pattern it does?
 {: .challenge}
 
 ## Examine pair of columns in detail
@@ -71,7 +71,7 @@ We can examine one pair of columns by clicking on its square in the `Scatterplot
 
 > ## Exercise
 > 
-> - Click on the `Scatterplot Matrix` square for `recordID` and `period` to get that as a facet in the left margin.
-> - Redo the `Text filter` on `scientificName` to show only entries including the letters `bai`.
+> - Click on the `Scatterplot Matrix` square for `VID` and `Date` to get that as a facet in the left margin.
+> - Redo the `Text filter` on `Author` to show only entries including the letters `Arch`.
 > Notice the change in the scatterplot. It might be easier to see if you click `export plot` to put it on a new browser tab.
 {: .challenge}
