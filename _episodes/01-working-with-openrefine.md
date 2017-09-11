@@ -28,15 +28,15 @@ Launch OpenRefine (see [Getting Started with OpenRefine](http://www.datacarpentr
 
 OpenRefine can import a variety of file types, including tab separated (`tsv`), comma separated (`csv`), Excel (`xls`, `xlsx`), JSON, XML, RDF as XML, Google Spreadsheets. See the [OpenRefine Importers page](https://github.com/OpenRefine/OpenRefine/wiki/Importers) for more information.
 
-In this first step, we'll browse our computer to the sample data file for this lesson. In this case, we modified the `Portal_rodents` CSV file, adding several columns: `scientificName`, `locality`, `county`, `state`, `country` and generating several more columns in the lesson itself (`JSON`, `decimalLatitude`, `decimalLongitude`). Data in `locality`, `county`, `country`, `JSON`, `decimalLatitude` and `decimalLongitude` are contrived and are in no way related to the original dataset. 
+In this first step, we'll browse our computer to the sample data file for this lesson. In this case, we have created a set of TCP data called openrefine.csv. 
 
 If you haven't already, download the data from:  
-[https://ndownloader.figshare.com/files/7823341](https://ndownloader.figshare.com/files/7823341)
+[https://raw.githubusercontent.com/iaine/humanities-lesson-data/master/data/openrefine.csv](https://raw.githubusercontent.com/iaine/humanities-lesson-data/master/data/openrefine.csv)
 
 Once OpenRefine is launched in your browser, the left margin has options to `Create Project`, `Open Project`, or `Import Project`. Here we will create a new project:
 
 1. click `Create Project` and select `Get data from` `This Computer`.  
-2. Click `Choose Files` and select the file `TCP.csv`. Click `Open` or double-click on the filename.
+2. Click `Choose Files` and select the file `openrefine.csv`. Click `Open` or double-click on the filename.
 3. Click `Next>>` under the browse button to upload the data into OpenRefine.  
 4. OpenRefine gives you a preview - a chance to show you it understood the file. If, for example, your file was really tab-delimited, the preview might look strange, you would choose the correct separator in the box shown and click `Update Preview` (bottom left). If this is the wrong file, click `<<Start Over` (upper left).  
 5. If all looks well, click `Create Project>>` (upper right). 
