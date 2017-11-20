@@ -88,7 +88,7 @@ along with a number representing how many times that value occurs in the column.
 > > `To number`. Doing `Facet` > `Numeric facet` creates a box in the left panel that shows a histogram of the number of 
 > > entries per year. Notice that the data is shown as a number, not a date. If you instead transform the column to a date, the 
 > > program will assume all entries are on January 1st of the year.   
-> > 3. After creating a facet, click `Sort by count` in the facet box. The year with the most observations is 1534 and 1640. There are many data but among them are 1632, 1636. 
+> > 3. After creating a facet, click `Sort by count` in the facet box. The year with the most observations is 1640. There are many data but among them are 1632, 1636. 
 > > 
 > {: .solution}
 {: .challenge}
@@ -135,11 +135,11 @@ can do to fix this?
 
 > ## Exercise
 >
-> Try to change the name of the second new column to "species". How can you correct the problem you encounter?
+> Try to change the name of the second new column to "Author". How can you correct the problem you encounter?
 > 
 > > ## Solution
 > > 
-> > On the `Author 2` column, click the down arrow and then `Edit column` > `Rename this column`. Type "species" into the box
+> > On the `Author 2` column, click the down arrow and then `Edit column` > `Rename this column`. Type "Author" into the box
 > > that appears. A pop-up will appear that says `Another column already named Author`. This is because there is another column
 > > where we've recorded the species abbreviation. You can choose another name like `authorName` for this column or change the other 
 > > `Author` column you can change the name to `allAuthors`.
