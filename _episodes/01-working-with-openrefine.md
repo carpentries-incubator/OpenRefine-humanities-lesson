@@ -31,7 +31,7 @@ OpenRefine can import a variety of file types, including tab separated (`tsv`), 
 In this first step, we'll browse our computer to the sample data file for this lesson. In this case, we have created a set of TCP data called openrefine.csv. 
 
 If you haven't already, download the data from:  
-[https://raw.githubusercontent.com/iaine/humanities-lesson-data/master/data/openrefine.csv](https://raw.githubusercontent.com/iaine/humanities-lesson-data/master/data/openrefine.csv)
+[https://raw.githubusercontent.com/iaine/humanities-lesson-data/master/library/openrefine.csv](https://raw.githubusercontent.com/iaine/humanities-lesson-data/master/library/openrefine.csv)
 
 Once OpenRefine is launched in your browser, the left margin has options to `Create Project`, `Open Project`, or `Import Project`. Here we will create a new project:
 
@@ -68,7 +68,7 @@ along with a number representing how many times that value occurs in the column.
 
 > ## Solution
 > 
-> There will be several near-identical entries in `Author`. For example, there is one entry for `Archdeacony of London`. This a misspellings of `Archdeaconry`. We will see how to correct these 
+> There will be several near-identical entries in `Author`. For example, there is one entry for `Archdeacony of London`. This a misspelling of `Archdeaconry`. We will see how to correct these 
 > misspelled and mistyped entries in a later exercise.  
 {: .solution}
 
@@ -84,7 +84,7 @@ along with a number representing how many times that value occurs in the column.
 > > 
 > > 1. For the column `Date` do `Facet` > `Text facet`. A box will appear in the left panel showing that there are 64 unique entries in
 > > this column.  
-> > 2. By default, the column `yr` is formatted as Text. You can change the format by doing `Edit cells` > `Common transforms` > 
+> > 2. By default, the column `Date` is formatted as Text. You can change the format by doing `Edit cells` > `Common transforms` > 
 > > `To number`. Doing `Facet` > `Numeric facet` creates a box in the left panel that shows a histogram of the number of 
 > > entries per year. Notice that the data is shown as a number, not a date. If you instead transform the column to a date, the 
 > > program will assume all entries are on January 1st of the year.   
