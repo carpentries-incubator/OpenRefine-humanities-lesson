@@ -28,15 +28,15 @@ Launch OpenRefine (see [Getting Started with OpenRefine](http://www.datacarpentr
 
 OpenRefine can import a variety of file types, including tab separated (`tsv`), comma separated (`csv`), Excel (`xls`, `xlsx`), JSON, XML, RDF as XML, Google Spreadsheets. See the [OpenRefine Importers page](https://github.com/OpenRefine/OpenRefine/wiki/Importers) for more information.
 
-In this first step, we'll browse our computer to the sample data file for this lesson. In this case, we modified the `Portal_rodents` CSV file, adding several columns: `scientificName`, `locality`, `county`, `state`, `country` and generating several more columns in the lesson itself (`JSON`, `decimalLatitude`, `decimalLongitude`). Data in `locality`, `county`, `country`, `JSON`, `decimalLatitude` and `decimalLongitude` are contrived and are in no way related to the original dataset. 
+In this first step, we'll browse our computer to the sample data file for this lesson. In this case, we have created a set of TCP data called openrefine.csv. 
 
 If you haven't already, download the data from:  
-[https://ndownloader.figshare.com/files/7823341](https://ndownloader.figshare.com/files/7823341)
+[https://raw.githubusercontent.com/iaine/humanities-lesson-data/master/data/openrefine.csv](https://raw.githubusercontent.com/iaine/humanities-lesson-data/master/data/openrefine.csv)
 
 Once OpenRefine is launched in your browser, the left margin has options to `Create Project`, `Open Project`, or `Import Project`. Here we will create a new project:
 
 1. click `Create Project` and select `Get data from` `This Computer`.  
-2. Click `Choose Files` and select the file `TCP.csv`. Click `Open` or double-click on the filename.
+2. Click `Choose Files` and select the file `openrefine.csv`. Click `Open` or double-click on the filename.
 3. Click `Next>>` under the browse button to upload the data into OpenRefine.  
 4. OpenRefine gives you a preview - a chance to show you it understood the file. If, for example, your file was really tab-delimited, the preview might look strange, you would choose the correct separator in the box shown and click `Update Preview` (bottom left). If this is the wrong file, click `<<Start Over` (upper left).  
 5. If all looks well, click `Create Project>>` (upper right). 
@@ -88,7 +88,7 @@ along with a number representing how many times that value occurs in the column.
 > > `To number`. Doing `Facet` > `Numeric facet` creates a box in the left panel that shows a histogram of the number of 
 > > entries per year. Notice that the data is shown as a number, not a date. If you instead transform the column to a date, the 
 > > program will assume all entries are on January 1st of the year.   
-> > 3. After creating a facet, click `Sort by count` in the facet box. The year with the most observations is 1534 and 1640. There are many data but among them are 1632, 1636. 
+> > 3. After creating a facet, click `Sort by count` in the facet box. The year with the most observations is 1640. There are many data but among them are 1632, 1636. 
 > > 
 > {: .solution}
 {: .challenge}
@@ -135,11 +135,11 @@ can do to fix this?
 
 > ## Exercise
 >
-> Try to change the name of the second new column to "species". How can you correct the problem you encounter?
+> Try to change the name of the second new column to "Author". How can you correct the problem you encounter?
 > 
 > > ## Solution
 > > 
-> > On the `Author 2` column, click the down arrow and then `Edit column` > `Rename this column`. Type "species" into the box
+> > On the `Author 2` column, click the down arrow and then `Edit column` > `Rename this column`. Type "Author" into the box
 > > that appears. A pop-up will appear that says `Another column already named Author`. This is because there is another column
 > > where we've recorded the species abbreviation. You can choose another name like `authorName` for this column or change the other 
 > > `Author` column you can change the name to `allAuthors`.

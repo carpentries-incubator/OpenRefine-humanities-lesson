@@ -110,9 +110,7 @@ You can sort by multiple columns by performing sort on additional columns. The s
 > > 1. For the `Author` column, click on `Sort...` and then `text`. This will group all entries made in, for example, 1632,
 > > together, regardless of the year that entry was collected.  
 > > 2. For the `pages` column, click on `Sort` > `Sort...` > `numbers` and select `sort by this column alone`. This will undo the 
-> > sorting by year step. Once you've sorted by `yr` you can then apply another sorting step to sort by month within year. To do this
-> > for the `mo` column, click on `Sort` > `numbers` but do not select `sort by this column alone`. To ensure that all entries are shown 
-> > chronologically, you will need to add a third sorting step by day within month. 
+> > sorting by year step.
 > > 
 > {: .solution}  
 {: .challenge}
@@ -121,7 +119,7 @@ If you go back to one of the already sorted colunms and select > `Sort` > `Remov
 
 > ## Exercise
 >
-> Sort by `year`, `month` and `day` in some order. Be creative: try sorting as `numbers` or `text`, and in reverse order (`largest to smallest` or `z to a`).
+> Sort by `Date`, `Author` and `Pages` in some order. Be creative: try sorting as `numbers` or `text`, and in reverse order (`largest to smallest` or `z to a`).
 >
 > Use > `Sort` > `Remove sort` to remove the sort on the second of three columns. Notice how that changes the order.
 {: .challenge}
