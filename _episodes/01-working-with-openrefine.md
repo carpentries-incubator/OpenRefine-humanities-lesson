@@ -93,6 +93,26 @@ along with a number representing how many times that value occurs in the column.
 > {: .solution}
 {: .challenge}
 
+You can also use a custom facet to search by words in a column. 
+
+1. Go to author
+2. Go facts, then select customized facets, and select word facet
+3. A box called place should appear in the left hand side. 
+
+> ## Exercise
+>
+> 1. Using custom faceting, find out how many words are represented in the place column.
+>
+> 2. How many representations of London can you find?
+> > ## Solution
+> > 
+> > 1. 23 choices
+> > 
+> > 2. 3 versions of London: London, London?, Londini
+> >
+> {: .solution}
+{: .challenge}
+
 ## Clustering
 
 In OpenRefine, clustering means "finding groups of different values that might be alternative representations of the same thing". For example, the two strings `New York` and `new york` are very likely to refer to the same concept and just have capitalization differences. Likewise, `Gödel` and `Godel` probably refer to the same person. Clustering is a very powerful tool for cleaning datasets which contain misspelled or mistyped entries. OpenRefine has several clustering algorithms built in. Experiment with them, and learn more about these algorithms and how they work. 
