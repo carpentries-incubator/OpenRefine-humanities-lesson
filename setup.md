@@ -5,7 +5,7 @@ permalink: /setup/
 ---
 
 > ## Data
-> **Download** this data file to your computer: [https://github.com/iaine/humanities-lesson-data/blob/master/data/TCP.csv](https://github.com/iaine/humanities-lesson-data/blob/master/data/TCP.csv)
+> **Download** this data file to your computer: [https://github.com/iaine/humanities-lesson-data/blob/master/data/openrefine/openrefine.csv](https://github.com/iaine/humanities-lesson-data/blob/master/data/openrefine/openrefine.csv)
 >
 > #### About the data
 > The data for this lesson is a part of the Data Carpentry Humanities workshop. 
