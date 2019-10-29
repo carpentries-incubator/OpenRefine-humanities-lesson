@@ -28,7 +28,7 @@ This gives you a quick way to clean all of your related data.
 
 Let's practice running these steps on a new dataset. We'll test this on an uncleaned version of the dataset we've been working with. 
 
-1. Download an uncleaned version of the dataset: [Open Refine](https://raw.githubusercontent.com/iaine/humanities-lesson-data/master/library/openrefine.csv) or use the version of the raw dataset you saved to your computer.  
+1. Download an uncleaned version of the dataset: [Open Refine](../data/eebo.csv) or use the version of the raw dataset you saved to your computer.  
 2. Start a new project in OpenRefine with this file and name it something different from your existing project.  
 3. Click the `Undo / Redo` tab > `Apply` and paste in the contents of `txt` file with the JSON code. 
 4. Click `Perform operations`. The dataset should now be the same as your other cleaned dataset.

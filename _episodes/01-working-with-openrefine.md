@@ -28,15 +28,15 @@ Launch OpenRefine (see [Getting Started with OpenRefine](http://www.datacarpentr
 
 OpenRefine can import a variety of file types, including tab separated (`tsv`), comma separated (`csv`), Excel (`xls`, `xlsx`), JSON, XML, RDF as XML, Google Spreadsheets. See the [OpenRefine Importers page](https://github.com/OpenRefine/OpenRefine/wiki/Importers) for more information.
 
-In this first step, we'll browse our computer to the sample data file for this lesson. In this case, we have created a set of TCP data called openrefine.csv. 
+In this first step, we'll browse our computer to the sample data file for this lesson. In this case, we have created a set of TCP data called eebo.csv. 
 
 If you haven't already, download the data from:  
-[https://raw.githubusercontent.com/iaine/humanities-lesson-data/master/library/openrefine.csv](https://raw.githubusercontent.com/iaine/humanities-lesson-data/master/library/openrefine.csv)
+[../data/eebo.csv](../data/eebo.csv)
 
 Once OpenRefine is launched in your browser, the left margin has options to `Create Project`, `Open Project`, or `Import Project`. Here we will create a new project:
 
 1. click `Create Project` and select `Get data from` `This Computer`.  
-2. Click `Choose Files` and select the file `openrefine.csv`. Click `Open` or double-click on the filename.
+2. Click `Choose Files` and select the file `eebo.csv`. Click `Open` or double-click on the filename.
 3. Click `Next>>` under the browse button to upload the data into OpenRefine.  
 4. OpenRefine gives you a preview - a chance to show you it understood the file. If, for example, your file was really tab-delimited, the preview might look strange, you would choose the correct separator in the box shown and click `Update Preview` (bottom left). If this is the wrong file, click `<<Start Over` (upper left).  
 5. If all looks well, click `Create Project>>` (upper right). 
