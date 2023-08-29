@@ -11,4 +11,4 @@ Lesson on OpenRefine for Humanities
 
 ### Maintainers
 
-- Iain Emsley ([@iaine](https://github.com/iaine))
+- Needs a new maintainer.
